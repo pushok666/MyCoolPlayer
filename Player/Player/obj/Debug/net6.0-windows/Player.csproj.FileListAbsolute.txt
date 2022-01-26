@@ -19,3 +19,5 @@ D:\работа\MyCoolPlayer\Player\Player\obj\Debug\net6.0-windows\Player.dll
 D:\работа\MyCoolPlayer\Player\Player\obj\Debug\net6.0-windows\ref\Player.dll
 D:\работа\MyCoolPlayer\Player\Player\obj\Debug\net6.0-windows\Player.pdb
 D:\работа\MyCoolPlayer\Player\Player\obj\Debug\net6.0-windows\Player.genruntimeconfig.cache
+D:\работа\MyCoolPlayer\Player\Player\obj\Debug\net6.0-windows\Pages\NowPlay.g.cs
+D:\работа\MyCoolPlayer\Player\Player\obj\Debug\net6.0-windows\Pages\NowPlay.baml

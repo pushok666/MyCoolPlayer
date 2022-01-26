@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Player"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600">
-    <Grid>
+        Title="MainWindow" Height="450" Width="600"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid MouseLeftButtonDown="MoveWindow">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              Background="#1F2023">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0"
+                   Width="69"
+                   Height="27"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="45,0,0,0"
+                   Content="Now Play"
+                   Foreground="#FFFFFF"
+                   VerticalContentAlignment="Top"
+                   FontFamily="Ink Free"
+                   FontWeight="Bold"
+                   FontSize="15"
+                   />
+            <Label Grid.Column="2"
+                   Width="30"
+                   Height="28"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Content="X"
+                   Foreground="#FFFFFF"
+                   FontSize="16"
+                   VerticalContentAlignment="Top"
+                   HorizontalContentAlignment="Right"
+                   Margin="0,0,5,5"
+                   MouseDown="CloseEvent">
+            </Label>
+        </Grid>
+        <Grid Grid.Row="1"
+              Background="#2D2F34"></Grid>
 
     </Grid>
 </Window>

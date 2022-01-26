@@ -24,5 +24,16 @@ namespace Player
         {
             InitializeComponent();
         }
+
+        private void MoveWindow(object sender, MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown(e);
+            this.DragMove();
+        }
+
+        private void CloseEvent(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        }
     }
 }
