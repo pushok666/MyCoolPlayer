@@ -12,6 +12,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
+            <RowDefinition Height="64"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0"
@@ -23,7 +24,7 @@
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0"
                    Width="69"
-                   Height="27"
+                   Height="auto"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Left"
                    Margin="45,0,0,0"
@@ -34,6 +35,18 @@
                    FontWeight="Bold"
                    FontSize="15"
                    />
+            <Label Grid.Column="0"
+                   Width="72"
+                   Height="auto"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Margin="155,0,0,0"
+                   Content="Play List"
+                   Foreground="#FFFFFF"
+                   VerticalContentAlignment="Top"
+                   FontFamily="Ink Free"
+                   FontWeight="Bold"
+                   FontSize="16"/>
             <Label Grid.Column="2"
                    Width="30"
                    Height="28"
@@ -49,7 +62,10 @@
             </Label>
         </Grid>
         <Grid Grid.Row="1"
-              Background="#2D2F34"></Grid>
+              Background="#2D2F34"
+              Drop="DropFile" AllowDrop="True"></Grid>
+        <Grid Grid.Row="2"
+              Background="#1F2023"></Grid>
 
     </Grid>
 </Window>

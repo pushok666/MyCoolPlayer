@@ -13,8 +13,7 @@
     ],
     "additionalProbingPaths": [
       "C:\\Users\\Mvideo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Mvideo\\.nuget\\packages",
-      "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\Mvideo\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

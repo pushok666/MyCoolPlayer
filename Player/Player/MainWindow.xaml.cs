@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Player.BL;
 
 namespace Player
 {
@@ -20,8 +21,10 @@ namespace Player
     /// </summary>
     public partial class MainWindow : Window
     {
+        Music music;
         public MainWindow()
         {
+            music = new Music();
             InitializeComponent();
         }
 
@@ -34,6 +37,15 @@ namespace Player
         private void CloseEvent(object sender, MouseButtonEventArgs e)
         {
             Close();
+        }
+
+        private void DropFile(object sender, DragEventArgs e)
+        {
+            music.PlayMusic(sender, e);
+            //MessageBox.Show($"drop file {data}");
+
+
+            int a = 10;
         }
     }
 }
